@@ -14,19 +14,11 @@ import SecondsCounter from './SecondsCounter';
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
-let counter = 0;
-setInterval(() => {
-    counter += 1;
-    root.render(
-  <React.StrictMode>
-    <SecondsCounter seconds = {counter}/>
-  </React.StrictMode>,
-)
 
-}, 1000);
 
 root.render(
   <React.StrictMode>
-    <SecondsCounter seconds = {counter}/>
+
+    <SecondsCounter seconds = {counterSimple}/>
   </React.StrictMode>,
 )
